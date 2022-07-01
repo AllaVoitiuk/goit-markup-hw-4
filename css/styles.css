@@ -497,6 +497,7 @@ img {
 }
 
 .icon-element {
+  display: inline-block;
   width: 70px;
   height: 70px;
   margin-left: auto;
@@ -504,6 +505,7 @@ img {
 }
 
 .icon-envelope {
+  display: inline-block;
   width: 16px;
   height: 12px;
 }
@@ -512,6 +514,86 @@ img {
   width: 10px;
   height: 16px;
 }
+
+.our-client {
+  display: flex;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.card-client {
+  margin-right: 30px;
+  margin-top: 0px;
+}
+
+.card-client:last-child {
+  margin-right: 0px;
+}
+
+.client-link {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--color-accent);
+}
+
+.icon-client {
+  width: 106px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.constant-client:hover,
+.constant-client:focus {
+  background-color: var(--color-accent);
+}
+
+.social {
+  display: flex;
+  width: 206px;
+  height: 44px;
+
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.network {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  /* padding: 0px; */
+}
+
+.social-link {
+  display: inline-block;
+
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-accent);
+}
+
+.social-page {
+  width: 44px;
+  height: 44px;
+}
+
+.icon-network {
+  width: 20px;
+  height: 20px;
+}
+
 /* footer */
 footer {
   color: var(--white-color);
