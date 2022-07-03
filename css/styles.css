@@ -584,19 +584,23 @@ img {
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--color-accent);
-  
 }
+
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+  fill: var(--color-accent);
+}
+
 
 .icon-client {
   width: 106px;
   height: 60px;
 }
 
-.constant-client:hover,
+/* .constant-client:hover,
 .constant-client:focus {
-  /* background-color: var(--color-accent); */
   fill: var(--color-accent);
-} 
+}  */
 
 .social {
   display: flex;
@@ -632,16 +636,16 @@ img {
   fill: var(--white-color); 
 }
 
+.social-link:hover .social-page,
+.social-link:focus .social-page {
+  background-color: var(--color-accent);
+  fill: var(--white-color); 
+}
+
 .social-page {
   width: 20px;
   height: 20px;
 }
-
-.social-page:hover,
-.social-page:focus {
-  background-color: var(--color-accent);
-  fill: var(--white-color);
-}  
 
 .icon-network {
   align-items: center;
