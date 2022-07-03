@@ -15,6 +15,7 @@ html {
   --white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --button-primary-focus: #188ce8;
+  --color-icon-fill: #afb1b8;
 }
 
 body {
@@ -118,7 +119,6 @@ img {
   margin-right: 10px;
   width: 16px;
   height: 16px;
-
 }
 
 .adr-nav .adr-link {
@@ -131,7 +131,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
- 
+
 .adr-link:hover,
 .adr-link:focus {
   color: var(--color-accent);
@@ -144,7 +144,6 @@ img {
 }
 
 .logo {
- 
   margin-right: 93px;
   color: var(--title-text-color);
   font-family: 'Raleway';
@@ -357,7 +356,15 @@ img {
   line-height: 1.9;
 }
 
+.section-link:hover,
+.section-link:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .list .section-link {
+  display: block;
   text-decoration: none;
 }
 
@@ -460,9 +467,10 @@ img {
   margin-right: 0px;
 }
 
-.button-list:hover,
-.button-list:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.button.secondary:hover,
+.button.secondary:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-card .list {
@@ -488,12 +496,12 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-link:hover,
+/* .portfolio-link:hover,
 .portfolio-link:focus {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 .portfolio-content {
   padding: 20px 24px;
@@ -510,26 +518,23 @@ img {
 /* icon */
 
 .icon {
-  
   fill: currentColor;
 }
 
 .benefits-icon-inner {
   display: flex;
- 
-  height: 120px; 
+
+  height: 120px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  
 }
 
 .icon-inner {
   width: 70px;
   height: 70px;
-  
 }
 
 .icon-envelope {
@@ -578,23 +583,20 @@ img {
   fill: var(--color-accent);
 }
 
-
 .icon-client {
   width: 106px;
   height: 60px;
+  fill: var(--color-icon-fill);
 }
 
 .social {
   display: flex;
-  width: 206px;
-  height: 44px;
 
   margin-top: 16px;
   margin-bottom: 0px;
 }
 
 .network {
-  
   margin-right: 10px;
 }
 
@@ -605,7 +607,7 @@ img {
 .social-link {
   display: flex;
   width: 44px;
-  height: 44px; 
+  height: 44px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -614,18 +616,19 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--color-accent);
-  fill: var(--white-color); 
+  fill: var(--white-color);
 }
 
 .social-link:hover .social-page,
 .social-link:focus .social-page {
   background-color: var(--color-accent);
-  fill: var(--white-color); 
+  fill: var(--white-color);
 }
 
 .social-page {
   width: 20px;
   height: 20px;
+  fill: var(--color-icon-fill);
 }
 
 .icon-network {
@@ -683,7 +686,6 @@ footer {
 .social-link.footer:hover,
 .social-link.footer:focus {
   background-color: var(--color-accent);
-  
 }
 
 .footer-adr {
