@@ -118,6 +118,7 @@ img {
   margin-right: 10px;
   width: 16px;
   height: 16px;
+
 }
 
 /* .icon-link:hover,
@@ -135,7 +136,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
+ 
 .adr-link:hover,
 .adr-link:focus {
   color: var(--color-accent);
@@ -181,7 +182,9 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* max-width: 1600px; */
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -510,25 +513,37 @@ img {
 }
 
 /* icon */
+
 .icon {
-  fill: #afb1b8;
+  
+  fill: currentColor;
+}
+
+.benefits-icon-inner {
+  display: flex;
+ 
+  height: 120px; 
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  
 }
 
 .icon-inner {
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
-  border-radius: 4px;
-  padding: 25px 100px;
+  width: 70px;
+  height: 70px;
+  
 }
 
-.icon-element {
+/* .icon-element {
   display: inline-block;
   width: 70px;
   height: 70px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .icon-envelope {
   display: inline-block;
@@ -594,8 +609,8 @@ img {
 }
 
 .network {
-  width: 44px;
-  height: 44px;
+  /* width: 44px;
+  height: 44px; */
   margin-right: 10px;
 }
 
@@ -604,10 +619,11 @@ img {
 }
 
 .social-link {
-  display: inline-block;
+  display: flex;
   width: 44px;
-  height: 44px;
-  padding: 12px;
+  height: 44px; 
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 }
 
@@ -625,7 +641,7 @@ img {
 .social-page:hover,
 .social-page:focus {
   fill: var(--white-color);
-}
+} 
 
 .icon-network {
   align-items: center;
